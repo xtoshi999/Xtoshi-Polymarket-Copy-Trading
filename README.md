@@ -257,3 +257,6 @@ npm run dev
             }
         }
     }
+
+## Contact me
+If you have any questions or need assistance, please feel free to reach out to me at [https://t.me/topasian1](https://t.me/topasian1). I'm here to help!
