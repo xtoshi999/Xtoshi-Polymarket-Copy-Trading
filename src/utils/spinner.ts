@@ -16,4 +16,4 @@ const spinner = ora({
     },
 });
 
-export { spinner };
+export default spinner;
