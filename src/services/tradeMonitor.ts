@@ -42,7 +42,7 @@ const fetchTradeData = async () => {
             })
             .filter((activity: UserActivityInterface) => {
                 const currentTimestamp = Math.floor(moment().valueOf() / 1000);
-                return activity.timestamp + TOO_OLD_TIMESTAMP * 60 * 60 > currentTimestamp;
+                return activity.timestamp + TOO_OLD_TIMESTAMP * 60 * 60 > currentTimestamp;     //Fetch user transactions only an hour before
             })
             .map((activity: UserActivityInterface) => {
                 return { ...activity, bot: false, botExcutedTime: 0 };
@@ -59,10 +59,10 @@ const fetchTradeData = async () => {
 
 const tradeMonitor = async () => {
     console.log('Trade Monitor is running every', FETCH_INTERVAL, 'seconds');
-    await init();
+    await init();    //Load my oders before sever downs
     while (true) {
-        await fetchTradeData();
-        await new Promise((resolve) => setTimeout(resolve, FETCH_INTERVAL * 1000));
+        await fetchTradeData();     //Fetch all user activities
+        await new Promise((resolve) => setTimeout(resolve, FETCH_INTERVAL * 1000));     //Fetch user activities every second
     }
 };
 

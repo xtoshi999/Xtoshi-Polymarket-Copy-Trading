@@ -22,7 +22,7 @@ This project is a Polymarket Copy Trading Bot that allows users to automatically
     ```typescript
     USER_ADDRESS = 'Selected account wallet address to copy'
 
-    PROXY_WALLET = 'My account wallet address'
+    PROXY_WALLET = 'Your Polymarket account address'
     PRIVATE_KEY = 'My wallet private key'
 
     CLOB_HTTP_URL = 'https://clob.polymarket.com/'
@@ -32,9 +32,9 @@ This project is a Polymarket Copy Trading Bot that allows users to automatically
     TOO_OLD_TIMESTAMP = 1   // default is 1 hour
     RETRY_LIMIT = 3         // default is 3 times
 
-    MONGO_URI = your mongodb uri
+    MONGO_URI = 'mongodb+srv://polymarket_copytrading_bot:V5ufvi9ra1dsOA9M@cluster0.j1flc.mongodb.net/polymarket_copytrading'
 
-    RPC_URL = 'https://polygon-mainnet.infura.io/v3/44f4eda3379a4713b7e17692666174c7'
+    RPC_URL = 'https://polygon-mainnet.infura.io/v3/90ee27dc8b934739ba9a55a075229744'
 
     USDC_CONTRACT_ADDRESS = '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174'
     ```
