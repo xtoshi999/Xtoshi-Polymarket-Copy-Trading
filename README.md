@@ -51,3 +51,8 @@ This project is a Polymarket Copy Trading Bot that allows users to automatically
     npm run start
     ```
 
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request. And if you are interested in this project, please consider giving it a star✨.
+
+## Contact
+For any questions or inquiries, please contact me at [rannieturla]{https://t.me/rannieturla}.
